@@ -6,7 +6,7 @@
     <title>Bookers</title>
   </head>
   <body>
-    <h1>Bookers</h1>
+    <h1>Books</h1>
     <table>
       <thead>
         <tr>
@@ -32,11 +32,11 @@
     <%= form_with model:@book, local:true do |f| %>
     <%= render 'layouts/error_messages' %>
       <div class="field">
-        <label for="book_title">Title</label>
+        <%= f.label :Title %>
         <%= f.text_field :title %>
       </div>
       <div class="field">
-        <label for="book_body">Body</label>
+        <%= f.label :Body %>
         <%= f.text_area :body %>
       </div>
       <div class="action">

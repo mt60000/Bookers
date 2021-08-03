@@ -20,8 +20,8 @@ body {
   line-height: 18px;
 }
 h1 {
+  font-weight: bold;
   font-size: 26px;
-  margin: 17.42px 0;
 }
 p {
   font-size: 13px;
@@ -61,9 +61,6 @@ input {
 }
 textarea {
   padding: 2px;
-}
-.action {
-  padding: 1px 6px;
 }
 .field, .action {
   display: block;
