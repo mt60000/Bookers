@@ -31,13 +31,14 @@ a {
   font-size: 13px;
   color: #000;
 }
+a:visited {
+  color: #666;
+}
 a:hover {
   background-color: black;
   color: white;
 }
-a:visited {
-  color: #666;
-}
+
 th {
   font-size: 13px;
   padding: 1px 1px 5px;
@@ -67,4 +68,37 @@ textarea {
 .field, .action {
   display: block;
   margin-bottom: 10px;
+}
+#notice {
+  color: green;
+}
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+.field_with_errors {
+  background-color: #c00;
+  padding: 2px;
+  display: table;
+}
+.field_with_errors label {
+  background-color: #c00;
 }

@@ -1,11 +1,13 @@
 <h1>Editing Book</h1>
 <%= form_with model:@book, local: true do |f| %>
+<%= render 'layouts/error_messages' %>
   <div class="field">
-    <label>Title</label>
+    <div></div>
+    <label for="book_title">Title</label>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <label>Body</label>
+    <label for="book_body">Body</label>
     <%= f.text_area :body %>
   </div>
   <div class="action">
